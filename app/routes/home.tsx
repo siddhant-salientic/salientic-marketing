@@ -13,6 +13,7 @@ import { HowItWorksSection } from "~/pages/marketing/HowItWorksSection";
 import { ProblemSection } from "~/pages/marketing/ProblemSection";
 import { RoiStatsSection } from "~/pages/marketing/RoiStatsSection";
 import { SolutionSection } from "~/pages/marketing/SolutionSection";
+import { TeamSection } from "~/pages/marketing/TeamSection";
 
 export default function MarketingWebsite() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -52,6 +53,12 @@ export default function MarketingWebsite() {
                 className='text-slate-600 hover:text-blue-600 transition-colors font-medium'
               >
                 Partners
+              </a>
+              <a
+                href='#team'
+                className='text-slate-600 hover:text-blue-600 transition-colors font-medium'
+              >
+                Team
               </a>
               <Button
                 className='bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:shadow-lg transition-all'
@@ -103,6 +110,13 @@ export default function MarketingWebsite() {
               >
                 Partners
               </a>
+              <a
+                href='#team'
+                className='block text-slate-600 hover:text-blue-600 transition-colors font-medium py-2'
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Team
+              </a>
               <Button
                 className='w-full bg-blue-600 hover:bg-blue-700 text-white shadow-md hover:shadow-lg transition-all'
                 onClick={() => {
@@ -134,6 +148,8 @@ export default function MarketingWebsite() {
       <FaqSection />
 
       <DesignPartnerSection />
+
+      <TeamSection />
 
       <FinalCtaSection />
 
@@ -182,6 +198,14 @@ export default function MarketingWebsite() {
             <div>
               <h4 className='font-bold mb-6 text-lg'>Company</h4>
               <ul className='space-y-3 text-slate-400'>
+                <li>
+                  <a
+                    href='#team'
+                    className='hover:text-white transition-colors'
+                  >
+                    Team
+                  </a>
+                </li>
                 <li>
                   <a
                     href='#partners'
